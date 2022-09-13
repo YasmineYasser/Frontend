@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css' rel='stylesheet'>
+    <link rel = "stylesheet" href = "fontawesome-free-6.2.0-web/css/all.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <i class="fa-regular fa-square-h"></i>
+        <span class="logo_name">HIS System</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" >
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+            <a href="appointment.html" >
+                <i class="bx bx-calendar"></i>
+                 <span class="links_name"> Appointment</span>
+             </a>
+        <li>
+        <a href="billing.html" >
+                <i class="bx bx-calendar"></i>
+                 <span class="links_name"> Billing</span>
+             </a>
+        <li>
+          <a href="outpatient.html">
+            <i class="fa-solid fa-stethoscope"></i>          
+              <span class="links_name"> OPD -Out Patient</span>
+          </a>
+        </li>
+        <li>
+          <a href="inpatient.html">
+            <i class='fas fa-procedures' ></i>
+            <span class="links_name">OPD -In Patient</span>
+          </a>
+        </li>
+        <li>
+          <a href="pathology.html">
+            <i class='bx bxs-flask'  ></i>
+            <span class="links_name">Pathology</span>
+          </a>
+        </li>
+        <li>
+          <a href="pharmacy.html">
+            <i class="fa-solid fa-mortar-pestle" class="active"></i>
+            <span class="links_name">Pharmacy</span>
+          </a>
+        </li>
+        
+    
+        <li>
+          <a href="analysis.html">
+            <i class='bx bx-heart' ></i>
+            <span class="links_name">Analysis</span>
+          </a>
+        </li>
+       
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Pharmacy</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <a href="#" class="nav-link">
+        <i class='bx bxs-bell icon' ></i>
+        <span class="badge">5</span>
+    </a>
+      <a href="#" class="nav-link">
+        <i class='bx bxs-message-square-dots icon' ></i>
+        <span class="badge">8</span>
+    </a>
+    <span class="divider"></span>
+    <div class="profile">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        <ul class="profile-link">
+            <li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+            <li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+            <li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+        </ul>
+			</div>
+    </nav>
+         <!-- Data Table area Start-->
+            <div class="col s12">
+           <div><table class="table table-striped table-bordered table-hover ajaxlist dataTable no-footer" data-export-title="Appointment Details" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info" style="width: 646px;">
+                        <thead>
+                            <tr role="row"><th class="white-space-nowrap sorting" tabindex="0" aria-controls="testreport" rowspan="1" colspan="1" style="width: 65px;" aria-label="Bill No: activate to sort column ascending">Bill No</th><th class="white-space-nowrap dt-body-center sorting" tabindex="0" aria-controls="testreport" rowspan="1" colspan="1" style="width: 66px;" aria-label="Case ID: activate to sort column ascending">Case ID</th><th class="white-space-nowrap sorting" tabindex="0" aria-controls="testreport" rowspan="1" colspan="1" style="width: 110px;" aria-label="Reporting Date: activate to sort column ascending">Reporting Date</th><th class="white-space-nowrap sorting" tabindex="0" aria-controls="testreport" rowspan="1" colspan="1" style="width: 100px;" aria-label="Patient Name: activate to sort column ascending">Patient Name</th><th class="white-space-nowrap sorting" tabindex="0" aria-controls="testreport" rowspan="1" colspan="1" style="width: 117px;" aria-label="Reference Doctor: activate to sort column ascending">Reference Doctor</th><th class="white-space-nowrap dt-body-right sorting" tabindex="0" aria-controls="testreport" rowspan="1" colspan="1" style="width: 81px;" aria-label="Amount ($): activate to sort column ascending">Amount ($)</th><th class="white-space-nowrap dt-body-right sorting" tabindex="0" aria-controls="testreport" rowspan="1" colspan="1" style="width: 120px;" aria-label="Paid Amount ($): activate to sort column ascending">Paid Amount ($)</th><th class="text-right white-space-nowrap dt-body-right sorting_disabled" rowspan="1" colspan="1" style="width: 120px;" aria-label="Balance Amount ($)">Balance Amount ($)</th></tr>                      
+                          </thead>
+                        <tbody>
+                        <tr class="odd"><td valign="top" colspan="11" class="dataTables_empty"><div align="center">No data available in table <br> <br><img src="https://smart-hospital.in/shappresource/images/addnewitem.svg" width="150"><br><br> <span class="text-success bolds"><i class="fa fa-arrow-left"></i> Add new record or search with different criteria.</span><div></div></div></td></tr></tbody>
+                    </div></div></section>
+    <!-- Data Table area End-->
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+ <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+ <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+ <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
